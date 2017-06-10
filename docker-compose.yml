@@ -4,7 +4,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        image: django-polls:latest
+        image: polls:latest
         ports:
             - 8000:8000
         volumes:
