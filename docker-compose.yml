@@ -13,5 +13,5 @@ services:
             - db
 
     db:
-        image: postgres:latest
+        image: postgres:9.5-alpine
 
