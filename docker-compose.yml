@@ -1,0 +1,17 @@
+version: "3.1"
+services:
+    polls:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: django-polls:latest
+        ports:
+            - 8000:8000
+        volumes:
+            - /C/Users/nick/develop/pyconcz2017/workshop/django-polls_1.10:/code
+        depends_on:
+            - db
+
+    db:
+        image: postgres:latest
+
